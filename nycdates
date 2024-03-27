@@ -1,0 +1,41 @@
+# Date Night for indecisive nyc gf
+
+import random
+
+
+def pick_nyc_restaurant():
+    restaurants = [
+        "Boucherie - French" + "\n$$$",
+        "Shuka - Mediterraneran" + "\n$$",
+        "Rosemary's - Italian" + "\n$$-$$$",
+        "Ruby's Cafe - Australian" + "\n$$",
+        "Balthazar - French" + "\n$$$",
+        "Spicy Village - Chinese" + "\n$$",
+        "Minetta Tavern - French" + "\n$$$",
+        "McDonald's - Fine Dining" + "\n$",
+        "COTE Korean Steakhouse - KBBQ" + "\n$$$$",
+        "The Smith - American" + "\n$$-$$$",
+        "KazuNori - Sushi" + "\n$$",
+        "Thai Villa - Thai" + "\n$$",
+        "Da Andrea - Italian" + "\n$$-$$$",
+        "Le Bernardin - Seafood" + "\n$$$$",
+        "Katz's Delicatessen - Deli" + "\n$$",
+        "Momofuku Noodle Bar - Asian Fusion" + "\n$$",
+        "The Halal Guys - Middle Eastern" + "\n$-$$",
+        "Lombardi's Pizza - Italian" + "\n$$",
+        "Shake Shack - Burgers" + "\n$",
+        "Per Se - French" + "\n$$$$",
+        "Di Fara Pizza - Italian" + "\n$$",
+        "Joe's Shanghai - Chinese" + "\n$$-$$$",
+        "Peter Luger - Steakhouse" + "\n$$$$"
+    ]
+
+    # Randomly select a restaurant
+    restaurant = random.choice(restaurants)
+    return restaurant
+
+
+if __name__ == "__main__":
+    print("Let's see where we should eat in NYC today: ")
+    print(pick_nyc_restaurant())
+
